@@ -1,0 +1,23 @@
+.boxes {
+	.col {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+
+	.box-wrapper {
+		height: 100px;
+		position: relative;
+
+		.box {
+			height: 200px;
+			display: block;
+			border-radius: 14px;
+			position: absolute;
+			top: 125px;
+			left: 0px;
+			right: 0px;
+		}	
+	}
+	
+}
