@@ -3,14 +3,31 @@ $fa-font-path:"../node_modules/@fortawesome/fontawesome-free/webfonts";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/brands";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
 
-@import "components/intro-section";
-@import "components/hero";
-@import "components/title";
+@import "typography";
+
 @import "components/boxes";
-@import "components/testimonial";
+@import "components/footer";
+@import "components/header";
+@import "components/hero";
 @import "components/icon-bar";
+@import "components/intro-section";
+@import "components/language-switcher";
+@import "components/navigation";
+@import "components/testimonial";
+@import "components/title";
 
 
+
+body {
+	font-family: "MuseoSans";
+	background: #F5F5F5;
+}
+.btn-primary {
+	color: #FFFFFF;
+	&:hover {
+		color: #FFFFFF;
+	}
+}
 .bg-white { background: #FFFFFF; }
 .bg-mif-orange { background: #F39000; }
 .bg-additional-orange { background: #FAB518; }

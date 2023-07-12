@@ -1,0 +1,13 @@
+.language-switcher {
+	font-size: 13px;
+	a {
+		color: #000000;
+
+		&.active {
+			color: $mif-orange;
+		}
+	}
+	.btn {
+		color: #FFF !important;
+	}
+}

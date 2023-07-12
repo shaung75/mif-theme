@@ -17,12 +17,14 @@
     "server": "sirv --dev --no-clear --port 3000",
     "start": "npm-run-all --parallel watch server",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
-    "test": "npm-run-all css-lint css"
+    "test": "npm-run-all css-lint css",
+    "livereload": "livereload"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
     "@popperjs/core": "^2.11.7",
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "livereload": "^0.9.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
