@@ -1,0 +1,108 @@
+$body-color: #333;
+$body-bg: #fff;
+
+/* Primary Colours */
+$mif-orange: 						#F39000;
+$mif-red:								#DF1B12;
+$mif-dark-grey:					#343C42;
+$mif-dark-grey-alpha:		rgba(52,60,66,0.9);
+$mif-lime:							#C5B300;
+$mif-green:							#4C5C0F;
+$mif-blue:							#0E3B83;
+
+/* Secondary Colours */
+$mif-pink:							#F192AE;
+$mif-additional-red:		#e6512D;
+$mif-25-additional-red:	#ef9572;
+$mif-65-additional-red:	#F09571;
+$mif-85-additional-red:	#EB6F48;
+$mif-75-additional-red:	#ED825B;
+$mif-additional-orange:	#FAB518;
+$mif-yellow:						#FFD500;
+$mif-additional-green:	#8B8E22;
+$mif-80-green:					#617434;
+$mif-light-blue:				#719DC6;
+$mif-25-blue:						#C3CEE0;
+$mif-50-green:					#98A476;
+$mif-beige:							#f2f1ed;
+$mif-pink:							#f8dbd5;
+
+$warm-grey:							#F3F1ED;
+$warm-grey2:						#EDE8E2;
+$grey:									#F2EFEF;
+$dark-grey:							#343C42;
+$white:									#FFFFFF;
+
+.bg- {
+	&mif-orange 						{ background-color: $mif-orange;}
+	&mif-red 								{ background-color: $mif-red;}
+	&mif-dark-grey 					{ background-color: $mif-dark-grey;}
+	&mif-lime 							{ background-color: $mif-lime;}
+	&mif-green 							{ background-color: $mif-green;}
+	&mif-blue 							{ background-color: $mif-blue;}
+	&mif-pink 							{ background-color: $mif-pink;}
+	&mif-additional-red 		{ background-color: $mif-additional-red;}
+	&mif-25-additional-red	{ background-color: $mif-25-additional-red;}
+	&mif-65-additional-red	{ background-color: $mif-65-additional-red;}
+	&mif-85-additional-red	{ background-color: $mif-85-additional-red;}
+	&mif-75-additional-red	{ background-color: $mif-75-additional-red;}
+	&mif-additional-orange	{ background-color: $mif-additional-orange;}
+	&mif-yellow 						{ background-color: $mif-yellow;}
+	&mif-additional-green 	{ background-color: $mif-additional-green;}
+	&mif-light-blue 				{ background-color: $mif-light-blue;}
+	&mif-25-blue 						{ background-color: $mif-25-blue;}
+	&mif-50-green 					{ background-color: $mif-50-green;}
+	&mif-80-green 					{ background-color: $mif-80-green;}
+	&white 									{ background-color: $white; }
+	&warm-grey 							{	background-color: $warm-grey }	
+	&warm-grey2 							{	background-color: $warm-grey2 }	
+	&grey 									{	background-color: $grey }
+	&mif-beige							{	background-color: $mif-beige }
+	&mif-pink							{	background-color: $mif-pink }
+
+	&mif-orange-gradient 						{ background-image: linear-gradient(to right, $mif-orange, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-red-gradient 							{ background-image: linear-gradient(to right, $mif-red, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-dark-grey-gradient 				{ background-image: linear-gradient(to right, $mif-dark-grey, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-lime-gradient 							{ background-image: linear-gradient(to right, $mif-lime, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-green-gradient 						{ background-image: linear-gradient(to right, $mif-green, $mif-green, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-blue-gradient 							{ background-image: linear-gradient(to right, $mif-blue, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-pink-gradient 							{ background-image: linear-gradient(to right, $mif-pink, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-additional-red-gradient 		{ background-image: linear-gradient(to right, $mif-additional-red, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-65-additional-red-gradient	{ background-image: linear-gradient(to right, $mif-65-additional-red, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-85-additional-red-gradient	{ background-image: linear-gradient(to right, $mif-85-additional-red, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-75-additional-red-gradient	{ background-image: linear-gradient(to right, $mif-75-additional-red, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-additional-orange-gradient	{ background-image: linear-gradient(to right, $mif-additional-orange, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-yellow-gradient 						{ background-image: linear-gradient(to right, $mif-yellow, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-additional-green-gradient 	{ background-image: linear-gradient(to right, $mif-additional-green, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-light-blue-gradient 				{ background-image: linear-gradient(to right, $mif-light-blue, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-25-blue-gradient 					{ background-image: linear-gradient(to right, $mif-25-blue, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-50-green-gradient 					{ background-image: linear-gradient(to right, $mif-50-green, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&mif-80-green-gradient 					{ background-image: linear-gradient(to right, $mif-80-green, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&white-gradient 								{ background-image: linear-gradient(to right, $white, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&warm-grey-gradient 						{	background-image: linear-gradient(to right, $warm-grey, rgba(0,0,0,0), rgba(0,0,0,0));}
+	&grey-gradient 									{	background-image: linear-gradient(to right, $grey, rgba(0,0,0,0), rgba(0,0,0,0));}
+}
+
+.color- {
+	&mif-orange 						{ color: $mif-orange;}
+	&mif-red 								{ color: $mif-red;}
+	&mif-dark-grey 					{ color: $mif-dark-grey;}
+	&mif-lime 							{ color: $mif-lime;}
+	&mif-green 							{ color: $mif-green;}
+	&mif-blue 							{ color: $mif-blue;}
+	&mif-pink 							{ color: $mif-pink;}
+	&mif-additional-red 		{ color: $mif-additional-red;}
+	&mif-65-additional-red 	{ color: $mif-65-additional-red;}	
+	&mif-85-additional-red 	{ color: $mif-85-additional-red;}
+	&mif-75-additional-red 	{ color: $mif-75-additional-red;}
+	&mif-additional-orange	{ color: $mif-additional-orange;}
+	&mif-yellow 						{ color: $mif-yellow;}
+	&mif-additional-green 	{ color: $mif-additional-green;}
+	&mif-light-blue 				{ color: $mif-light-blue;}
+	&mif-25-blue 						{ color: $mif-25-blue;}
+	&mif-50-green 				{ color: $mif-50-green;}
+	&mif-80-green 				{ color: $mif-80-green;}
+	&white 									{ color: $white; }
+	&warm-grey 							{	color: $warm-grey }	
+	&grey 							{	color: $grey }	
+}

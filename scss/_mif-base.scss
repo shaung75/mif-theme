@@ -5,19 +5,30 @@ $fa-font-path:"../node_modules/@fortawesome/fontawesome-free/webfonts";
 
 @import "typography";
 
+@import "components/bootstrap-multiselect";
 @import "components/boxes";
+@import "components/carousel";
+@import "components/content-block";
+@import "components/data-portal";
+@import "components/featured-item";
 @import "components/footer";
 @import "components/header";
 @import "components/hero";
+@import "components/hot-topic";
 @import "components/icon-bar";
 @import "components/intro-section";
+@import "components/jelly";
 @import "components/language-switcher";
 @import "components/navigation";
+@import "components/quote";
+@import "components/tab-panel";
 @import "components/testimonial";
 @import "components/title";
 
 
-
+.container {
+	transition: opacity 2s;
+}
 body {
 	font-family: "MuseoSans";
 	background: #F5F5F5;
@@ -28,8 +39,19 @@ body {
 		color: #FFFFFF;
 	}
 }
-.bg-white { background: #FFFFFF; }
-.bg-mif-orange { background: #F39000; }
-.bg-additional-orange { background: #FAB518; }
-.bg-mif-blue { background: #41589A; }
-.bg-warm-grey {	background: #F3F1ED; }
+.btn-secondary {
+	color: $mif-additional-red;
+	border-color: $mif-additional-red;
+	background: $white;
+
+	i {
+		color: $dark-grey;
+	}
+	&:hover {
+		color: $mif-orange;
+		background: $white;
+		border-color: $mif-additional-red;
+	}
+}
+
+

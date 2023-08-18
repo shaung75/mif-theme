@@ -1,0 +1,85 @@
+.quote {
+	text-align: center;
+	background-image: url('../img/Quotation-marks.png');
+	background-repeat: no-repeat;
+	background-position: 20% 0%;
+
+	img {
+		width: 150px;
+		border-radius: 75px;
+		border: 1px dashed $dark-grey;
+		padding: 12px;
+	}
+	blockquote {
+		color: $mif-blue;
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 42px;
+	}
+	cite {
+		font-style: normal;
+		font-size: 22px;
+	}
+}
+
+.feature-quote {
+	position: relative;
+	background-repeat: no-repeat;
+  background-position: 150px center;
+
+	.quote {
+		opacity: 0;
+		transition: opacity 2s;
+
+		blockquote {
+			font-size: 45px;
+		}
+		blockquote,
+		cite {
+			position: relative;
+			top: 50px;
+			transition: top 2s;
+		}
+	}
+
+	&:before {
+		content: " ";
+		height: 80px;
+		width: 0px;
+		background: $mif-85-additional-red;
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		transition: width 2s;
+	}
+
+	&:after {
+		content: " ";
+		height: 150px;
+		width: 0px;
+		background: $mif-65-additional-red;
+		display: block;
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		transition: width 2s;
+	}
+
+	&:hover {
+		.quote {
+			opacity: 1;
+
+			blockquote,
+			cite {
+				top: 0px;
+			}
+		}
+		&:before {
+			width: 30%;
+		}
+		&:after {
+			width: 60%;
+		}
+	}
+}

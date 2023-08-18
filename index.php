@@ -1,56 +1,83 @@
-<!doctype html>
-<html lang="en">
+<?php include('components/head.php');?>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>MIF Theme</title>
+  <body class="pb-6">
 
-<style type="text/css">
-/**** Needs moving to SASS ****/
-.navbar .megamenu{ padding: 1rem; }
-/* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-  
-  .navbar .has-megamenu{position:static!important;}
-  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
-  
-} 
-/* ============ desktop view .end// ============ */
+    <div class="container bg-white g-0 mx-auto overflow-hidden">
 
+      <?php include('components/header.php');?>
 
-/* ============ mobile view ============ */
-@media(max-width: 991px){
-  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
-    overflow-y: auto;
-      max-height: 90vh;
-      margin-top:10px;
-  }
-}
-/* ============ mobile view .end// ============ */
-</style>
+      <div class="container bg-mif-blue">
+        <div class="row title py-2">
+          <div class="col">
+            Theme Demo
+          </div>
+        </div>
+      </div>
 
-  </head>
+      <div class="container bg-mif-85-additional-red pb-4">
+        <div class="row pt-4">
+          <div class="col-9">
+            <div class="content-block py-4 h-100 text-white">
+              <p>Rough representation of the new MIF theme. Keep in mind, this is still a work in progress so there may be some glitches still being developed.</p>
+              <p>It is also worth noting that for SEO analysis, this does not contain any of the image/js/css compression or any of the meta information that will be in place in the finished Drupal theme.
+            </div>
+          </div>
+        </div>
 
-  <body>
+        <div class="row pb-5">
+          <div class="col-3">
+            <div class="content-block featured-item h-100">
+              <img src="img/home.png" style="width: 100%;">
+              <div class="overlay">
+                <div class="text">
+                  <p>Home</p>
+                  <p><a href="home.php">View template</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <div class="container pb-4 mx-auto">
+          <div class="col-3">
+            <div class="content-block featured-item h-100">
+              <img src="img/about-us.png" style="width: 100%;">
+              <div class="overlay">
+                <div class="text">
+                  <p>About us</p>
+                  <p><a href="about-us.php">View template</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="content-block featured-item h-100">
+              <img src="img/newsmedia.png" style="width: 100%;">
+              <div class="overlay">
+                <div class="text">
+                  <p>News &amp; Media</p>
+                  <p><a href="news-media.php">View template</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="content-block featured-item h-100">
+              <img src="img/news.png" style="width: 100%;">
+              <div class="overlay">
+                <div class="text">
+                  <p>News</p>
+                  <p><a href="news-media.php">View template</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
 
       
-      <?php include('components/header.php');?>  
-      
-      
-
-      <?php include('components/title.php');?>
-
-      <?php include('components/hero.php');?>
-
-      <?php include('components/intro.php');?>
-
-      <?php include('components/boxes.php');?>
-
-      <?php include('components/testimonial.php');?>
 
       <?php include('components/footer.php');?>
 

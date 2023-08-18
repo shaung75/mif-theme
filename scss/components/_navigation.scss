@@ -3,15 +3,45 @@
 }
 
 .navbar {
+	.nav-item {
+		span {
+			position: relative;
+			display: inherit;
+
+			&:after {
+		   	content: '';
+			  position: absolute;
+			  width: 100%;
+			  transform: scaleX(0);
+			  height: 6px;
+			  bottom: 0;
+			  left: 0;
+			  background-color: $mif-additional-red;
+			  //transform-origin: center;
+			  //transition: transform 0.25s ease-out;
+		  }
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			span {
+				&::after {
+				  transform: scaleX(1);
+				  transform-origin: center;					
+				}
+			}
+		}
+	}
 	.nav-link {
 		margin: 0 5px;
 	}
 	.dropdown-toggle::after {
-	   border: none;
-	   font-family: "Font Awesome 6 Free";
-	   content: "\f078";
-	   vertical-align: 0px;
-	   color: $mif-orange;
+	  border: none;
+	  font-family: "Font Awesome 6 Free";
+	  content: "\f078";
+	  vertical-align: 0px;
+	  color: $mif-additional-red;
 	}
 	.btn {
 		font-weight: bold;
@@ -21,5 +51,11 @@
 		padding-right: 0px;
 		margin-right: 15px;
 		margin-left: 5px;
+	}
+}
+
+.nav-footer {
+	a {
+		color: #000000;
 	}
 }

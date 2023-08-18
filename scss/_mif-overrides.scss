@@ -1,10 +1,10 @@
 /* Bootstrap overrides */
 
 /* Colours */
-$primary:       $mif-orange;
+$primary:       $mif-additional-red;
 
 $navbar-light-color: #000000;
-$nav-link-font-weight: normal;
+$nav-link-font-weight: 300;
 
 $btn-border-radius:								20px;
 $btn-hover-bg-shade-amount:       0%;
@@ -18,3 +18,20 @@ $btn-active-border-tint-amount:   0%;
 $btn-link-color:									#FFFFFF;
 $btn-box-shadow:              		none;
 $btn-padding-x: 									40px;
+
+
+$tooltip-font-size:                 18px;
+$tooltip-max-width:                 200px;
+$tooltip-color:                     $white;
+$tooltip-bg:                        $dark-grey;
+
+
+/* Layout */
+$enable-negative-margins: true;
+
+$position-values: (
+  0: 0,
+  5: 5%,
+  50: 50%,
+  100: 100%
+);

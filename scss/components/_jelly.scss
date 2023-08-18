@@ -1,0 +1,14 @@
+.jelly {
+	position: relative;
+	text-align: center;
+
+	.animate {
+		position: absolute;
+		transition: 0.5s;
+		
+		&:hover {
+			transform: scale(1.2);
+			z-index: 102;
+		}
+	}
+}

@@ -31,12 +31,10 @@ $enable-shadows: true;
 $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 
 // Customize some defaults
-$body-color: #333;
-$body-bg: #fff;
+
 $border-radius: .4rem;
 $success: #7952b3;
 
-$grid-gutter-width: 126px;
 
 $container-max-widths: (
   sm: 540px,
@@ -45,6 +43,10 @@ $container-max-widths: (
   xl: 1440px,
   xxl: 1920px
 );
+
+$container-padding-x: 126px; /* Inner padding of 63px*/
+$grid-gutter-width: 30px;
+
 
 $grid-breakpoints: (
   xs: 0,
@@ -56,14 +58,27 @@ $grid-breakpoints: (
 );
 
 
-$mif-orange: #F39000;
+@import "styles/colours";
 
 @import "mif-overrides";
+
 
 
 // Required
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 7,
+  8: $spacer * 12,
+  9: $spacer * 26,
+);
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
@@ -113,6 +128,3 @@ $mif-orange: #F39000;
 
 @import "mif-base";
 @import "icon-list";
-
-
-

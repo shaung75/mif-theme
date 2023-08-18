@@ -1,0 +1,58 @@
+.data-portal {
+	.africa-map {
+		position: relative;
+		text-align: center;
+		opacity: 0;
+		transition: 2s;
+
+		.map {
+			opacity: 0.5;
+		}
+
+		.animate {
+			position: absolute;
+			transform: scale(2);
+			transition: 2s;
+
+			&.shrink {
+				transform: scale(0.5);
+			}
+		}
+	}
+
+	.content-block {
+		position: relative;
+		top: 100px;
+		transition: 2s;
+
+		h1,
+		h3 {
+			opacity: 0;
+			transition: 2s;
+		}
+	}
+
+	&:hover {
+		.africa-map {
+			opacity: 1;
+
+			.animate {
+				transform: scale(1);
+
+				&.shrink {
+					transform: scale(1);
+				}
+			}		
+		}
+
+		.content-block {
+			top: 0px;
+
+			h1,
+			h3 {
+				opacity: 1;
+			}
+		}
+		
+	}	
+}
